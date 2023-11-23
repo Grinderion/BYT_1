@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Calculator
+        //Calculator - chain of responsibility design pattern
         String calc1 = "237+7*4";
         String calc2 = "23*7-104";
         String calc3 = "222+7-104";
@@ -25,6 +25,8 @@ public class Main {
         TwoHanded twoHanded = new TwoHanded();
         twoHanded.doAction(spec1);
 
+        //Templete method pattern
+        
         Mage mageGenerator = new Mage();
         Warrior warriorGenerator = new Warrior();
         System.out.println(spec1.getState().toString());
